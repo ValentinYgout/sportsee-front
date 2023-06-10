@@ -1,0 +1,30 @@
+.horizontal-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1024px;
+    height: 91px;
+    background-color: black;
+    color: white ;
+    font-size: 24px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    color:#E60000 ;
+}
+.logo{
+    height: 64px;
+    width: 64px;
+    border-radius: 64px;
+    background-color:#E60000 ;
+}
+a{
+    text-decoration: none;
+    color: white ;
+}
+a:hover{
+    text-decoration: none;
+    color: white ;
+    color:#E60000;
+}

@@ -1,0 +1,58 @@
+.daily-activity{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 56%;
+background: white;
+
+}
+.custom-tooltip {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+  }
+  .chart-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+    margin-bottom: 10px;
+  }
+  
+  .chart-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .legend-container {
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .legend-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .legend-icon-kilogram {
+    background-color: #282D30;
+  }
+  
+  .legend-icon-calories {
+    background-color: #E60000;
+  }
+  
+  .legend-text {
+    margin-right: 10px;
+  }
+  

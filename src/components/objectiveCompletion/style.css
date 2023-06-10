@@ -1,0 +1,22 @@
+.objective-completion{
+ 
+    height: 100%;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   align-items: flex-start;
+}
+.chart-title{
+    font-size: 30px;
+    font-weight: 700;
+}
+.recharts-default-legend{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    
+}
+.RadialBarChart{
+    border-radius: 5px;
+}

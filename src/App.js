@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
+
+
+
+import {
+  BrowserRouter as Router, Routes, Route,
+} from "react-router-dom";
 import './App.css';
+import Dashboard from './pages/dashboard';
+import Home from './pages/home';
+import HorizontalNav from './components/horizontalNav';
+import ApiProvider from './context/context.js'
+import Error from './pages/error/error';
+
 
 function App() {
+ 
   return (
+    <ApiProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+      <HorizontalNav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:userId" element={<Dashboard />} />
+        <Route path="/error" element={<Error/>} />
+      </Routes>
+     
+
+
     </div>
+    </ApiProvider>
   );
 }
 

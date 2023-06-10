@@ -1,0 +1,20 @@
+.hello{
+    display: flex;
+    flex-direction: column;
+   width: 600px;
+   height: 130px;
+ 
+}
+.hello span.hello-top {
+    font-weight: 700;
+    font-size: 24px;
+   margin-top: 10px;
+  }
+  .hello span.congratulations {
+  
+    font-size: 16px;
+   margin-top: 10px;
+  }
+.hello .name{
+   color:#E60000 
+ }

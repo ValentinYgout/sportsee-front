@@ -1,0 +1,18 @@
+.home{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.home button:hover{
+    color:#E60000;
+    cursor: pointer;
+  
+}
+.home a{
+        color:black;
+ 
+}

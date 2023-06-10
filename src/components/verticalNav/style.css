@@ -1,0 +1,20 @@
+.vertical-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 117px;
+    background-color: black;
+    height: 689px;
+}
+.white-square{
+    height: 64px;
+    width: 64px;
+    margin-top: 10px;
+   
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

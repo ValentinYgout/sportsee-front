@@ -1,0 +1,23 @@
+.session-duration{
+    background-color: #FF0000;
+    height: 100%;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.session-duration .tooltip{
+    padding: 5px;
+    background-color: white;
+  
+}
+.duration-title{
+    padding: 30px 15px 0px 15px;
+    height: 50px;
+
+    color: #FFFFFF;
+    opacity: 0.5;
+
+}

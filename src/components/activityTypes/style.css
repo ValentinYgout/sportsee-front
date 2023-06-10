@@ -1,0 +1,10 @@
+.activity-types{
+    background: #282D30;
+    
+
+    height: 100%;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}

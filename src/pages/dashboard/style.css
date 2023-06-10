@@ -1,0 +1,52 @@
+.dashboard-container{
+    display: flex;
+    height: 780px;
+    width: 100%;
+}
+.dashboard-content{
+    padding: 0px 30px;
+    display: flex;
+  flex-direction: column;
+  ;
+  height: 700px;
+    width: 847px;
+   
+}
+.bottom-graphs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    
+    height: 40%;
+    margin-top: 1%;
+    }
+
+
+    .graphs{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+       
+        
+    }
+
+    .graphs-and-cards{
+        display: flex;
+       width: 847px;
+        height: 559px;
+    }
+
+    .infocards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 20%;
+        
+    
+    }
+    
