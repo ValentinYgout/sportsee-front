@@ -5,7 +5,7 @@ import './style.css';
 const ObjectiveCompletion = ({ data }) => {
   const completionPercentage = data[0].score;
   const startAngle = 200;
-
+  // creates label to display inside chart
   const renderLabel = ({ cx, cy }) => {
     return (
       <text x={cx} y={cy-15} textAnchor="middle" dominantBaseline="central"   className="completion-label" style={{

@@ -5,7 +5,7 @@ import MainData from '../models/main-data';
 import AverageSessions from '../models/average-sessions';
 
 
-
+// fetch data  from API or ApiMock with URL as a parameter
 export const fetchData = async (url) => {
   try {
 
@@ -19,6 +19,7 @@ export const fetchData = async (url) => {
   }
 };
 
+// converts data from API to match the format required by components to be rendered
 function convertData(response, url) {
   if (url.includes("activity")) {
     return new Activity(
@@ -36,7 +37,7 @@ function convertData(response, url) {
       response.data.data.userId,
       response.data.data.sessions)
   }
-  else {
+  else if (url.startsWith("http://localhost:3000/user/")) {
     return new MainData(
       response.data.data.id,
       response.data.data.userInfos,
@@ -46,6 +47,9 @@ function convertData(response, url) {
       ,
       response.data.data.keyData)
   }
-
+  else {
+    // if neither cases are covered, send error message to console
+    console.log("Error: Invalid URL format");
+    return null;
+  }
 }
-

@@ -12,6 +12,7 @@ const CustomCursor= ({points})=>{
   return( <rect opacity={0.2}  width='100%' height='100%' y="0" x={points[0].x}></rect>)
 }
 
+// replace date by day of the week's first letter
  for (let i = 0; i < sessions.length; i++) {
   sessions[i].day = days[i];
 }

@@ -7,6 +7,8 @@ export default function ApiProvider({children}) {
         apiToUse: apiToUse,
         toggleApi: toggleApi
     }
+
+    // alternates the source of the API between public folder"apiMock" and backend regular "api"
     function toggleApi(){
         
         setApiToUse((prevApi) => (prevApi === "api" ? "apiMock" : "api"))

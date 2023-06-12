@@ -10,7 +10,7 @@ import "./style.css";
 
 const ActivityTypes = ({data}) => {
 
-
+//match kind with index starting  from 1
   for (let i = 0; i < data.data.length; i++) {
     data.data[i].kind= data.kind[i+1]
   }
